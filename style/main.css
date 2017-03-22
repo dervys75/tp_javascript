@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: 'Indie Flower', cursive;
+    color: blue;
+    background-color: gainsboro;
+
+}
