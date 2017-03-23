@@ -8,7 +8,11 @@
 </head>
 <body>
 <header>
-    <img src="images/favicon.png" alt="Voyages">
+    <div>
+        <img src="images/favicon.png" alt="Voyages">
+        <h1>title site</h1>
+    </div>
+
     <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -19,6 +23,10 @@
 
     </nav>
 </header>
+<div id="carrusel">
+    <h2>Carrusel de images</h2>
+
+</div>
 
 <section id="form_rabais" class="form_rabais">
     <h2>Trouver</h2>
@@ -28,35 +36,27 @@
         <ul>
             <li>
                 <label>Choisise une categorie</label>
-                <select>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
+                <select id="list_categorie">
+
                 </select>
             </li>
             <li>
-                <label>Date de départ</label>
-                <input type="date" name="bday" max="2018-12-31">
-                <label>Durée</label>
-                <select>
-                    <option value="volvo">5 Jour</option>
-                    <option value="saab">10 Jour</option>
-                    <option value="opel">21 Jour</option>
-                </select>
-
-            <li></li>
+                <label for="date">Date de départ</label>
+                <input id="date" type="date" name="bday" max="2018-12-31">
+            </li>
+            <li>
+                <label for="nb_participants">Durée</label>
+                <input type="number" id="nb_participants" name="nb_participants" value="1" min="1">
+            </li>
         </ul>
     </form>
 </section>
 <section id="centre_index " class="centre_index">
     <h1>TP JavaScript || Agence de Voyages</h1>
-    <div id="carrusel">
 
-    </div>
-    <div id="index_categories">
+    <div >
         <h2>Nous Categories</h2>
-        <ul id = "list_categorie">
+        <!--<ul id = "list_categorie">-->
 
 
         </ul>

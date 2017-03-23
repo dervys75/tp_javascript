@@ -17,16 +17,17 @@ const M_CLOSE = '</mark>';
 //
 // Apelle les Categories page INDEX
 
-function charger_categories() {
-    console.log('Executer charger_Categories');
-    var categ_Forfaits = document.getElementById('list_categorie');
-    categ_Forfaits.innerHTML = ""; // vider le ul
-    // parcurrir les categories
-    for (var i = 0; i < categories.length; i++) {
-        categ_Forfaits.innerHTML += "<li>" + categories[i] + "</li>";
-    }
-}
-charger_categories();
+// function charger_categories() {
+//     console.log('Executer charger_Categories');
+//     var categ_Forfaits = document.getElementById('list_categorie');
+//     categ_Forfaits.innerHTML = ""; // vider le ul
+//     // parcurrir les categories
+//     for (var i = 0; i < categories.length; i++) {
+//         categ_Forfaits.innerHTML += "<option>" + categories[i] + "</option>";
+//     }
+//
+// }
+// charger_categories();
 
 
 
