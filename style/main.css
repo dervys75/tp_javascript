@@ -12,3 +12,26 @@ body {
     background-color: gainsboro;
 
 }
+
+li {
+    list-style: none;
+}
+
+/*Page d'accueil*/
+section.form_rabais,
+section.centre_index {
+    display: inline-block;
+    margin: 0;
+}
+/* page accueil Parti gauche (formulaire rabais */
+
+section.form_rabais {
+    width: 30%;background-color: yellow;
+    float: left;
+}
+
+
+section.centre_index {
+    width: 70%;
+    background-color: red;
+}

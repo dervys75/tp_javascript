@@ -7,15 +7,69 @@
     <link rel="stylesheet" href="style/main.css"/>
 </head>
 <body>
-<h1>TP JavaScript || Agence de Voyages</h1>
+<header>
+    <img src="images/favicon.png" alt="Voyages">
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="formulaire.html">Formulaire</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<section id="form_rabais" class="form_rabais">
+    <h2>Trouver</h2>
+    <h3>Vous Vacanses de rabais aujourd'hui</h3>
+
+    <form id="rabais">
+        <ul>
+            <li>
+                <label>Choisise une categorie</label>
+                <select>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </li>
+            <li>
+                <label>Date de départ</label>
+                <input type="date" name="bday" max="2018-12-31">
+                <label>Durée</label>
+                <select>
+                    <option value="volvo">5 Jour</option>
+                    <option value="saab">10 Jour</option>
+                    <option value="opel">21 Jour</option>
+                </select>
+
+            <li></li>
+        </ul>
+    </form>
+</section>
+<section id="centre_index " class="centre_index">
+    <h1>TP JavaScript || Agence de Voyages</h1>
+    <div id="carrusel">
+
+    </div>
+    <div id="index_categories">
+        <h2>Nous Categories</h2>
+        <ul id = "list_categorie">
+
+
+        </ul>
+    </div>
+
+
+</section>
 
 
 
-<h2>Nous Categories</h2>
-<ul id = "list_categorie">
 
 
-</ul>
+
 
 
 
