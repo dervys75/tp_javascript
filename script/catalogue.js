@@ -7,6 +7,7 @@ const P_OPEN = '<p>';
 const P_CLOSE = '</p>';
 const M_OPEN = '<mark>';
 const M_CLOSE = '</mark>';
+const IMG_PATH ="http://p86-tp-forfaits.projetisi.com/images/";
 
 /*Declaration de Variables*/
 
@@ -21,7 +22,7 @@ function  charger_forfait() {
     listeForfaits.innerHTML = ""; // vider le ul
     // parcurrir les forfaits
     for (var i = 0; i < forfaits_data.length; i++) {
-        listeForfaits.innerHTML += "<li>" + P_OPEN + forfaits_data[i].nom + P_CLOSE + P_OPEN + '$' + forfaits_data[i].prix + P_CLOSE + P_OPEN + forfaits_data[i].ref_forfait + P_CLOSE + P_OPEN + forfaits_data[i].info_cat + P_CLOSE + '<img src="images/forfaits_data[i].img_catalogue">' +"</li>";
+        listeForfaits.innerHTML += "<li>" + P_OPEN + forfaits_data[i].nom + P_CLOSE + P_OPEN + '$' + forfaits_data[i].prix + P_CLOSE + P_OPEN + forfaits_data[i].ref_forfait + P_CLOSE + P_OPEN + forfaits_data[i].info_cat + P_CLOSE + '<img src="'+IMG_PATH+forfaits_data[i].photo2+'">' +"</li>";
     }
 }
 charger_forfait();
