@@ -17,6 +17,14 @@ body {
     background-repeat: no-repeat;
 }
 
+div.main {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+100,ffffff+100,ffffff+100,ffffff+100,ffffff+100,ffffff+100,ffffff+100&0.73+99,0.73+99,0+100 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.73) 99%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
 h1,h2,h3,h4,h5,h6,nav ul li a {
     color: blueviolet;
     font-family: 'Delius Unicase', cursive;
@@ -25,7 +33,7 @@ li {
     list-style: none;
 }
 
-header, section#form_rabais {
+header, section#form_rabais,footer {
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f79502+1,f79502+1,f79502+1,f8b500+52,fccd4d+80,f9db8e+100,f9db8e+100 */
     background: rgb(247,149,2); /* Old browsers */
@@ -90,10 +98,6 @@ section.form_rabais {
 
 section.centre_index {
     width: 70%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+100,ffffff+100,ffffff+100,ffffff+100,ffffff+100,ffffff+100,ffffff+100&0.73+99,0.73+99,0+100 */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0.73) 99%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
 
 }
