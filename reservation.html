@@ -5,18 +5,18 @@
     <title>Reservation || Agence de Voyages</title>
     <link href="images/favicon.png" rel="icon" type="image/x-icon"/>
     <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="fonts/style.css"/>
 </head>
 <body>
 <div class="main">
 <header>
     <div id="logo">
-        <img src="images/favicon.png" alt="Voyages">
+        <a href="index.html"><img src="images/favicon.png" alt="Voyages"></a>
         <h1>title site</h1>
     </div>
-
     <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html"><span class="icon-home"></span>Accueil</a></li>
             <li><a href="catalogue.html">Catalogue</a></li>
             <li><a href="reservation.html">Reservation</a></li>
             <li><a href="formulaire.html">Formulaire</a></li>
@@ -24,18 +24,118 @@
 
     </nav>
 </header>
+    <section class="reserva_main">
+        <div >
+            <form id="content" action="#">
 
+                <fieldset id="identite">
+                    <legend><span class="icon-user"></span>Vous êtes: </legend>
+                    <h4><span class="icon-text-document"></span>C'est maintenant l'heure de l'épreuve le formulaire!</h4>
+                    <ul>
+                        <li>
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" placeholder="Entrez votre Nom" class="long" required
+                                   pattern="[A-Za-z]{2,}" autofocus/>
+                        </li>
+                        <li>
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" id="prenom" placeholder="Entrez votre Prenom" class="long"
+                                   required pattern="[A-Za-z]{2,}"/>
+                        </li>
+                        <li>
+                            <label for="adresse">Adresse du Client :</label>
+                            <input type="text" id="adresse" placeholder="Entrez votre Adresse" class="long"
+                                   required pattern="[A-Za-z]{2,}"/>
+                        </li>
+                        <li>
+                            <label for="email">Email :</label>
+                            <input type="email" name="direccionemail"  id="email" placeholder="Ej.: user@xxxx.com">
+                        </li>
+                        <li>
+                            <label for="telephone"> Téléphone :</label>
+                            <input type="tel" id="telephone" class="long" pattern="^\(?\d{3}\)?(-|)?\d{3}(-| )?\d{2}(-|)?\d{2}" placeholder="(xxx)-xxx-xxxx"/>
+                        </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <ul>
+                        <li>
+                            <label for="pers">Nombre de participants :</label>
+                            <input type="number" id="pers" class="court" placeholder=" ------- " min="1"
+                                   max="20" required/>
+                        </li>
+                        <li>
+                            <label for="animaux">Nombre de'Animaux de Compagnie :</label>
+                            <input type="number" id="animaux" class="court" placeholder=" ------- " min="1"
+                                   max="20" required/>
+                        </li>
+                        <li>
+                            <label for="date">Date de départ</label>
+                            <input id="date" type="date" name="bday" max="2018-12-31"><span class="icon-calendar"></span>
+                        </li>
+                        <li>
+                            <input type="submit" value="Soumettre" id="soumettre"/>
+                        </li>
+                    </ul>
+                </fieldset>
 
+                <table style="width:80%">
+                <tr>
+                    <th>Options</th>
+                    <th>Qté</th>
+                    <th>Prix</th>
+                </tr>
+                <tr>
+                    <th>Choix de Forfait</th>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
 
+                    <td>Prix Animaux</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <td>Doe</td>
+                    <td>80</td>
+                </tr>
+                </table>
 
+            </form>
+        </div>
 
-
-
-
-
-
+    </section>
 
 </div>
+<footer>
+    <h3>Nous Coordonnées</h3>
+    <div class="coordonees">
+        <h4>nom du site</h4>
+        <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <li><span itemprop="streetAddress">255 Crémazie Est</span></li>
+            <li><span itemprop="addressLocality">Montréal (Québec)</span></li>
+            <li><span itemprop="postalCode">H2M 1M2</span></li>
+            <li><span itemprop="telephone">514 842-2426</span></li>
+            <li><span itemprop="email">info@electronic-universal-store.com</span></li>
+            <li><span itemprop="email">info@elecetronic-universal-store.com</span></li>
+        </ul>
+        <p><a href="https://goo.gl/maps/nUuwptRP9mH2"><span class="icon-location"></span>Adresse</a></p>
+    </div>
+    <div class="social">
+        <h3>Réseaux Sociaux</h3>
+        <ul id="redes">
+            <li><a href="https://www.facebook.com/"><span class="icon-facebook-with-circle"></span></a>
+            </li>
+            <li><a href="https://www.instagram.com/"><span class="icon-linkedin-with-circle"></span></a>
+            </li>
+            <li><a href="https://twitter.com/"><span class="icon-tumblr-with-circle"></span></a></li>
+            <li><a href="https://www.youtube.com/"><span class="icon-youtube-with-circle"></span></a></li>
+        </ul>
+    </div>
+    </di>
+</footer>
+
 <script src="http://p86-tp-forfaits.projetisi.com/script/forfaits.js"></script>
 <script src="script/main.js"></script>
 <script src="script/index.js"></script>
