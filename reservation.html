@@ -8,78 +8,96 @@
     <link rel="stylesheet" href="fonts/style.css"/>
 </head>
 <body>
-<div class="main">
-<header>
-    <div id="logo">
-        <a href="index.html"><img src="images/favicon.png" alt="Voyages"></a>
-        <h1>title site</h1>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html"><span class="icon-home"></span>Accueil</a></li>
-            <li><a href="catalogue.html">Catalogue</a></li>
-            <li><a href="reservation.html">Reservation</a></li>
-            <li><a href="formulaire.html">Formulaire</a></li>
-        </ul>
-
-    </nav>
-</header>
+<div class="man">
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/favicon.png" alt="Voyages"></a>
+            <h1>title site</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="icon-home"></span>Accueil</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li class="active"><a href="reservation.html">Reservation</a></li>
+                <li><a href="formulaire.html">Formulaire</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="reserva_main">
-        <div >
-            <form id="content" action="#">
+        <div class="promo_reserv">
+        </div>
+        <form id="content" class="contenant" action="#">
+            <h4>C'est maintenant l'heure de l'épreuve le formulaire!</h4>
+            <fieldset id="identite" class="identite">
 
-                <fieldset id="identite">
-                    <legend><span class="icon-user"></span>Vous êtes: </legend>
-                    <h4><span class="icon-text-document"></span>C'est maintenant l'heure de l'épreuve le formulaire!</h4>
-                    <ul>
-                        <li>
-                            <label for="nom">Nom :</label>
-                            <input type="text" id="nom" placeholder="Entrez votre Nom" class="long" required
-                                   pattern="[A-Za-z]{2,}" autofocus/>
-                        </li>
-                        <li>
-                            <label for="prenom">Prénom :</label>
-                            <input type="text" id="prenom" placeholder="Entrez votre Prenom" class="long"
-                                   required pattern="[A-Za-z]{2,}"/>
-                        </li>
-                        <li>
-                            <label for="adresse">Adresse du Client :</label>
-                            <input type="text" id="adresse" placeholder="Entrez votre Adresse" class="long"
-                                   required pattern="[A-Za-z]{2,}"/>
-                        </li>
-                        <li>
-                            <label for="email">Email :</label>
-                            <input type="email" name="direccionemail"  id="email" placeholder="Ej.: user@xxxx.com">
-                        </li>
-                        <li>
-                            <label for="telephone"> Téléphone :</label>
-                            <input type="tel" id="telephone" class="long" pattern="^\(?\d{3}\)?(-|)?\d{3}(-| )?\d{2}(-|)?\d{2}" placeholder="(xxx)-xxx-xxxx"/>
-                        </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset>
-                        <ul>
-                        <li>
-                            <label for="pers">Nombre de participants :</label>
-                            <input type="number" id="pers" class="court" placeholder=" ------- " min="1"
-                                   max="20" required/>
-                        </li>
-                        <li>
-                            <label for="animaux">Nombre de'Animaux de Compagnie :</label>
-                            <input type="number" id="animaux" class="court" placeholder=" ------- " min="1"
-                                   max="20" required/>
-                        </li>
-                        <li>
-                            <label for="date">Date de départ</label>
-                            <input id="date" type="date" name="bday" max="2018-12-31"><span class="icon-calendar"></span>
-                        </li>
-                        <li>
-                            <input type="submit" value="Soumettre" id="soumettre"/>
-                        </li>
-                    </ul>
-                </fieldset>
+                <ul>
+                    <li class="long">
+                        <label for="nom"><span class="icon-user"></span>Nom :</label>
+                        <input type="text" id="nom" placeholder="Entrez votre Nom" pattern="[A-Za-z]{2,}" autofocus/>
+                        <span class="erreur">* Entrez un nom</span>
+                    </li>
+                    <li class="long">
+                        <label for="prenom"><span class="icon-user"></span>Prénom :</label>
+                        <input type="text" id="prenom" placeholder="Entrez votre Prenom"
+                               pattern="[A-Za-z]{2,}"/>
+                        <span class="erreur">* Entrez un Prenom</span>
+                    </li>
+                    <li class="long">
+                        <label for="email">Email :</label>
+                        <input type="email" name="direccionemail" id="email" placeholder="Ej.: user@xxxx.com">
+                        <span class="erreur">* Entrez un Email</span>
+                    </li>
+                    <li class="long">
+                        <label for="adresse">Adresse du Client :</label>
+                        <input type="text" id="adresse" placeholder="Entrez votre Adresse" pattern="[A-Za-z]{2,}"/>
+                        <span class="erreur">* Entrez Adresse</span>
+                    </li>
+                    <li class="court_1">
+                        <label for="telephone"> Téléphone :</label>
+                        <input type="tel" id="telephone"  pattern="^\(?\d{3}\)?(-|)?\d{3}(-| )?\d{2}(-|)?\d{2}" placeholder="(xxx)-xxx-xxxx"/>
+                        <span class="erreur">* Entrez un No. Téléphon</span>
+                    </li>
 
-                <table style="width:80%">
+                    <li class="court_1">
+                        <label for="province" class="court">Province :</label>
+                        <select name="province" id="province">
+                            <option>Choix Province</option>
+                            <option>Alberta</option>
+                            <option>Colombie-Britanique</option>
+                            <option>Île-du-Prince-Édouard</option>
+                            <option>Manitoba</option>
+                            <option>Nouveau-Brunswick</option>
+                            <option>Nouvelle-Écosse</option>
+                            <option>Ontario</option>
+                            <option>Québec</option>
+                            <option>Saskatchewan</option>
+                            <option>Terre-Neuve et Labrador</option>
+                        </select>
+                        <span class="erreur">* Province</span><br/>
+                    </li>
+                    <li class="court_1">
+                        <label for="code-Post">Code Postal :</label>
+                        <input type="text" id="code-Post" placeholder="XXX XXX" class="court" pattern="[A-Za-z]{2,}"/>
+                        <span class="erreur">* Code Postal</span><br/>
+                    </li>
+                    <li class="court_1">
+                        <label for="pers">Nombre de participants :</label>
+                        <input type="number" id="pers" class="court" placeholder="---" min="1"/>
+                        <span class="erreur">* Nombre de personnes</span><br/>
+                    </li>
+                    <li class="court_1">
+                        <label for="animaux">Nombre de'Animaux :</label>
+                        <input type="number" id="animaux" class="court" placeholder="---" min="1"/>
+                        <span class="erreur">* Nombre de Animaux</span><br/>
+                    </li>
+                    <li class="court_1">
+                        <label for="date" <span class="icon-calendar"></span>>Date de départ</label>
+                        <input id="date" type="date" name="bday" max="2018-12-31"/>
+                        <span class="erreur">* Date de départ</span><br/>
+                    </li>
+                </ul>
+            </fieldset>
+            <table>
                 <tr>
                     <th>Options</th>
                     <th>Qté</th>
@@ -91,8 +109,8 @@
                     <td>50</td>
                 </tr>
                 <tr>
-
-                    <td>Prix Animaux</td>
+                    <th>Prix Animaux</th>
+                    <td>94</td>
                     <td>94</td>
                 </tr>
                 <tr>
@@ -100,43 +118,44 @@
                     <td>Doe</td>
                     <td>80</td>
                 </tr>
-                </table>
-
-            </form>
-        </div>
-
+            </table>
+            <div>
+                <input type="submit" value="Envoyez" class="soumettre"/>
+                <input type="submit" value="Annuler" class="soumettre"/>
+            </div>
+        </form>
     </section>
+    <footer>
 
+        <div class="coordonees">
+            <h3>Nous Coordonnées</h3>
+            <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <li><span itemprop="streetAddress">255 Crémazie Est</span></li>
+                <li><span itemprop="addressLocality">Montréal (Québec)</span></li>
+                <li><span itemprop="postalCode">H2M 1M2</span></li>
+                <li><span itemprop="telephone" class="icon-old-phone">514 842-2426</span></li>
+                <li><span itemprop="email" class="icon-mail">info@gmail.com</span></li>
+
+            </ul>
+            <p><a href="https://goo.gl/maps/nUuwptRP9mH2"><span class="icon-location"></span>Adresse</a></p>
+        </div>
+        <div class="social">
+            <h3>Réseaux Sociaux</h3>
+            <ul id="redes">
+                <li><a href="https://www.facebook.com/"><span class="icon-facebook-with-circle"></span></a>
+                </li>
+                <li><a href="https://www.instagram.com/"><span class="icon-linkedin-with-circle"></span></a>
+                </li>
+                <li><a href="https://twitter.com/"><span class="icon-tumblr-with-circle"></span></a></li>
+                <li><a href="https://www.youtube.com/"><span class="icon-youtube-with-circle"></span></a></li>
+            </ul>
+        </div>
+        </di>
+    </footer>
 </div>
-<footer>
-    <h3>Nous Coordonnées</h3>
-    <div class="coordonees">
-        <h4>nom du site</h4>
-        <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <li><span itemprop="streetAddress">255 Crémazie Est</span></li>
-            <li><span itemprop="addressLocality">Montréal (Québec)</span></li>
-            <li><span itemprop="postalCode">H2M 1M2</span></li>
-            <li><span itemprop="telephone">514 842-2426</span></li>
-            <li><span itemprop="email">info@electronic-universal-store.com</span></li>
-            <li><span itemprop="email">info@elecetronic-universal-store.com</span></li>
-        </ul>
-        <p><a href="https://goo.gl/maps/nUuwptRP9mH2"><span class="icon-location"></span>Adresse</a></p>
-    </div>
-    <div class="social">
-        <h3>Réseaux Sociaux</h3>
-        <ul id="redes">
-            <li><a href="https://www.facebook.com/"><span class="icon-facebook-with-circle"></span></a>
-            </li>
-            <li><a href="https://www.instagram.com/"><span class="icon-linkedin-with-circle"></span></a>
-            </li>
-            <li><a href="https://twitter.com/"><span class="icon-tumblr-with-circle"></span></a></li>
-            <li><a href="https://www.youtube.com/"><span class="icon-youtube-with-circle"></span></a></li>
-        </ul>
-    </div>
-    </di>
-</footer>
 
-<script src="http://p86-tp-forfaits.projetisi.com/script/forfaits.js"></script>
+
+<script src="script/jquery-3.2.0.min.js"></script>
 <script src="script/main.js"></script>
 <script src="script/index.js"></script>
 <script src="script/constants.js"></script>

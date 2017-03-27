@@ -9,6 +9,26 @@
 //
 // Apelle les Categories page INDEX
 
+function color(elEvento){
+    console.log('Change couleur menu');
+   var evento = elEvento || window.event;
+   var tipo = evento.type;
+    if (tipo == "click") {
+        this.style.color = "whit";
+    }
+    else if (tipo == "dblclick") {
+        this.style.color = "olive";
+    }
+}
+window.onload = function() {
+    document.getElementsByClassName("colores").onclick = color;
+    document.getElementsByClassName("colores").ondblclick = color;
+};
+
+
+
+
+
 function charger_categories() {
     console.log('Executer charger_Categories');
     var categ_Forfaits = document.getElementById('list_categorie');
