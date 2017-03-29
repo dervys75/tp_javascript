@@ -101,3 +101,15 @@ section.centre_index {
 
 
 }
+/*********************Page Catague**************************/
+h3.title_forfait {
+	font-family: 'PT Sans Caption', sans-serif;
+	background: #0aacf7;
+	color: white;
+	padding: 10px;
+	font-weight: 300;
+}
+h3.title_forfait::after {
+	
+}
+/**********************Fin page Catalogue*************************/
