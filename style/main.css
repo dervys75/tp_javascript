@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Delius+Unicase');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
 * {
     box-sizing: border-box;
@@ -18,34 +19,38 @@ body {
 }
 
 div.main {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+100,ffffff+100,ffffff+100,ffffff+100,ffffff+100,ffffff+100,ffffff+100&0.73+99,0.73+99,0+100 */
     background: -moz-linear-gradient(top,  rgba(255,255,255,0.73) 99%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-h1,h2,h3,h4,h5,h6,nav ul li a {
+h1,h2,h3,h4,h5,h6 {
     color: blueviolet;
     font-family: 'Delius Unicase', cursive;
+
 }
 li {
     list-style: none;
 }
 
-header, section#form_rabais,footer {
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f79502+1,f79502+1,f79502+1,f8b500+52,fccd4d+80,f9db8e+100,f9db8e+100 */
-    background: rgb(247,149,2); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(247,149,2,1) 1%, rgba(247,149,2,1) 1%, rgba(247,149,2,1) 1%, rgba(248,181,0,1) 52%, rgba(252,205,77,1) 80%, rgba(249,219,142,1) 100%, rgba(249,219,142,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(247,149,2,1) 1%,rgba(247,149,2,1) 1%,rgba(247,149,2,1) 1%,rgba(248,181,0,1) 52%,rgba(252,205,77,1) 80%,rgba(249,219,142,1) 100%,rgba(249,219,142,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(247,149,2,1) 1%,rgba(247,149,2,1) 1%,rgba(247,149,2,1) 1%,rgba(248,181,0,1) 52%,rgba(252,205,77,1) 80%,rgba(249,219,142,1) 100%,rgba(249,219,142,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79502', endColorstr='#f9db8e',GradientType=0 ); /* IE6-9 */
+header,
+section#form_rabais {
+    background: rgb(247, 149, 2);
+    background: -moz-linear-gradient(93deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
+    background: -webkit-linear-gradient(93deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
+    background: -o-linear-gradient(93deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
+    background: -ms-linear-gradient(93deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
+    background: linear-gradient(183deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
 
 }
 
-header {
+
+header,nav,ul {
     width: 100%;
+    margin: 0;
+   padding-top: 10px;
+    font-family: 'Delius Unicase', cursive;
 }
 
 div#logo {
@@ -65,16 +70,54 @@ div#logo h1 {
 }
 
 nav {
-    width: 80%;
+    overflow:hidden;
 }
+
+nav ul {
+    width: 80%;
+    margin: auto;
+   text-align: right;
+    margin-right: 20px;
+
+}
+
 nav ul li {
     display: inline-block;
-    color: blueviolet;
+    background: rgba(218,249,239,1);
+    color: #00B3BA;
+    text-shadow: 1px 2px 3px rgba(91, 56, 30, 0.28);
+    width: 20%;
+    padding: 25px 5px 0;
+    text-align: center;
+    border: 2px solid #00B3BA;
+    border-bottom: none;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0px -3px 19px 0px rgba(50, 50, 50, 0.65);
+    -moz-box-shadow:    0px -3px 19px 0px rgba(50, 50, 50, 0.65);
+    box-shadow:         0px -3px 19px 0px rgba(50, 50, 50, 0.65);
 }
+
+
+nav ul li:hover {
+    cursor: pointer;
+    background-color: #FFE4A5;
+
+
+}
+
+
+.active {
+    /*border-bottom: none;*/
+    box-shadow:inset 0 0 1em rgba(50, 50, 50, 0.65);
+    color: #00B3BA
+}
+
 
 nav ul li a {
     text-decoration: none;
-    color: blueviolet;
+    color: #00B3BA;
+    font-size: 20px;
+
 }
 
 div#carrusel {
@@ -101,6 +144,7 @@ section.centre_index {
 
 
 }
+<<<<<<< HEAD
 /*********************Page Catague**************************/
 h3.title_forfait {
 	font-family: 'PT Sans Caption', sans-serif;
@@ -113,3 +157,393 @@ h3.title_forfait::after {
 	
 }
 /**********************Fin page Catalogue*************************/
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************************/
+                    /*DERVYS RESERVATION*/
+/**************************************************************/
+
+section.reserva_main{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #00B3BA;
+   }
+
+form.contenant {
+    background: rgba(250, 255, 241, 0.7);
+
+}
+
+form.contenant input,select {
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #00B3BA;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+form.contenant fieldset {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border:none;
+    margin-bottom: 20px;
+}
+
+
+form.contenant fieldset li{
+    display: inline-block;
+
+}
+form.contenant fieldset label {
+    display: inline-block;
+    width: 100%;
+}
+
+form.contenant fieldset li.long {
+    width: 45%;
+    margin: auto 20px;
+    padding-bottom: 10px;
+}
+
+
+form.contenant span.erreur {
+    display: inline-block;
+    width: 100%;
+    font-size: x-small;
+    font-family: 'Noto Serif', serif;
+}
+
+form.contenant fieldset li.court_1 {
+    width: 27%;
+    margin: auto 20px;
+    padding-bottom: 10px;
+}
+
+form.contenant span,h4 {
+    color: #00B3BA;
+    margin: auto;
+}
+
+form.contenant h4 {
+    width: 80%;
+    text-align: center;
+    padding: 40px;
+    text-decoration: underline;
+}
+
+/*form.contenant fieldset h4 {*/
+    /*width: 70%;*/
+    /*margin: 10px auto;*/
+/*}*/
+
+/*form.contenant fieldset span {*/
+    /*font-size: 30px;*/
+    /*!*display: block;*!*/
+/*}*/
+
+/*fieldset.identite ul,fieldset.dure_vac ul {*/
+    /*width: 100%;*/
+    /*padding: 0;*/
+/*}*/
+
+/*form.contenant li {*/
+    /*margin-bottom: 5px;*/
+/*}*/
+
+
+/*form.contenant fieldset ul li {*/
+    /*display: inline-block;*/
+    /*width: 38%;*/
+    /*margin-left: 100px;*/
+
+/*}*/
+
+/*fieldset.identite input[type="text"],*/
+/*fieldset.identite input[type="email"] {*/
+    /*width: 100%;*/
+/*}*/
+
+/*li.court {*/
+    /*display: inline-block;*/
+    /*width: 20%;*/
+
+/*}*/
+
+/*li.court_1 {*/
+    /*width: 15%;*/
+/*}*/
+
+/*fieldset.dure_vac {*/
+    /*width: 70%;*/
+    /*margin: auto;*/
+/*}*/
+
+/*form.contenant li.court_1 {*/
+    /*display: inline-block;*/
+    /*width: 30%;*/
+/*}*/
+
+/*form.contenant li.court_2 {*/
+    /*display: inline-block;*/
+    /*width: 35%;*/
+/*}*/
+
+/*form.contenant fieldset.identite li.court_1 label {*/
+    /*width: 20%;*/
+    /*!*display: block;*!*/
+/*}*/
+
+/*form.contenant li.court_1 input {*/
+    /*width: 25%;*/
+/*}*/
+
+/*li.court_2 input {*/
+    /*width: 50%;*/
+/*}*/
+
+form.contenant table {
+    width: 40%;
+    margin: auto auto 5px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+form.contenant table tbody{
+    width: 80%;
+    padding: 10px;
+    background-color:  rgba(218,249,239,1);
+    margin-bottom: 10px;
+
+}
+
+form.contenant table th {
+    font-size: 20px;
+
+}
+
+form.contenant div {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+form.contenant div input.soumettre{
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    background-color: #00B3BA;
+    color: white;
+    /*font-size: 20px;*/
+    font-size: 32px;
+    padding: 5px;
+    text-shadow: 0px -1px 5px rgba(30, 30, 30, 0.8);
+    -webkit-box-shadow: 0px 1px 8px rgba(70, 50, 50, 0.96);
+    -moz-box-shadow:    0px 1px 8px rgba(70, 50, 50, 0.96);
+    box-shadow:         0px 1px 8px rgba(70, 50, 50, 0.96);
+
+
+}
+
+form.contenant div input.soumettre:hover {
+    background-color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+    cursor:pointer;
+    text-shadow: none;
+
+}
+
+
+
+
+
+
+
+/**************************************************************/
+/*DERVYS FOOTER*/
+/**************************************************************/
+
+footer {
+    background: rgb(247, 149, 2);
+    background: -moz-linear-gradient(275deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
+    background: -webkit-linear-gradient(275deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
+    background: -o-linear-gradient(275deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
+    background: -ms-linear-gradient(275deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
+    background: linear-gradient(5deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
+    display: flex;
+    position: relative;
+    vertical-align: middle;
+    color: blueviolet;
+    font-family: 'Delius Unicase', cursive !important;
+    font-size: medium !important;
+
+}
+
+
+
+div.coordonees li {
+    margin-bottom: 5px;
+}
+
+div.coordonees p {
+    /*color: blueviolet;*/
+    width: 33%;
+    text-align: left;
+    margin: auto;
+}
+
+div.coordonees a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+
+div.coordonees,
+div.social {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+div.coordonees {
+    border-right: 2px solid rgba(218,249,239,1);
+}
+
+
+
+div.coordonees ul {
+    margin: auto;
+
+    width: 45%;
+    text-align: left;
+}
+
+div.coordonees span  {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+div.social h3 {
+    margin: 60px auto 10px;
+}
+div.social ul {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+div.social ul li {
+    display: inline-block;
+    width: 20%;
+    margin: 10px auto;
+}
+
+div.social ul li a {
+    text-decoration: none;
+    width: 100%;
+}
+
+div.social ul li a span {
+    font-size: 50px;
+    color: blueviolet;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+
+
+
+/*********************** VERSION TABLETTE ***********************/
+/*************************************************************************************************************************************/
+@media only screen and (max-width: 960px) {
+
+
+
+/****resrvation****/
+
+
+
+}
+
+/*************************************************************************************************************************************/
+/*********************** VERSION MOBILE ***********************/
+/*************************************************************************************************************************************/
+@media only screen and (max-width: 768px) {
+
+
+
+    /****resrvation****/
+
+
+}
+>>>>>>> 76d17a88e0dc21738d4fd312f13425b35c6e0ab0

@@ -2,37 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Formulaire || Agence de Voyages</title>
+    <title>Formulaire || Voyages de Rêve</title>
     <link href="images/favicon.png" rel="icon" type="image/x-icon"/>
     <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="fonts/style.css"/>
 </head>
 <body>
 <div class="main">
 <header>
     <div id="logo">
-        <img src="images/favicon.png" alt="Voyages">
-        <h1>title site</h1>
+        <a href="index.html"><img src="images/favicon.png" alt="Voyages"></a>
+        <h1>Voyages de Rêve</h1>
     </div>
 
     <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html"><span class="icon-home"></span>Accueil</a></li>
             <li><a href="catalogue.html">Catalogue</a></li>
             <li><a href="reservation.html">Reservation</a></li>
-            <li><a href="formulaire.html">Formulaire</a></li>
+            <li  class="active"><a href="formulaire.html">Formulaire</a></li>
         </ul>
 
     </nav>
 </header>
-
-
-
-
-
-
-
 </div>
-<script src="http://p86-tp-forfaits.projetisi.com/script/forfaits.js"></script>
+<footer>
+    <h3>Nous Coordonnées</h3>
+    <div class="coordonees">
+        <h4>nom du site</h4>
+        <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <li><span itemprop="streetAddress">255 Crémazie Est</span></li>
+            <li><span itemprop="addressLocality">Montréal (Québec)</span></li>
+            <li><span itemprop="postalCode">H2M 1M2</span></li>
+            <li><span itemprop="telephone">514 842-2426</span></li>
+            <li><span itemprop="email">info@electronic-universal-store.com</span></li>
+            <li><span itemprop="email">info@elecetronic-universal-store.com</span></li>
+        </ul>
+        <p><a href="https://goo.gl/maps/nUuwptRP9mH2"><span class="icon-location"></span>Adresse</a></p>
+    </div>
+    <div class="social">
+        <h3>Réseaux Sociaux</h3>
+        <ul id="redes">
+            <li><a href="https://www.facebook.com/"><span class="icon-facebook-with-circle"></span></a>
+            </li>
+            <li><a href="https://www.instagram.com/"><span class="icon-linkedin-with-circle"></span></a>
+            </li>
+            <li><a href="https://twitter.com/"><span class="icon-tumblr-with-circle"></span></a></li>
+            <li><a href="https://www.youtube.com/"><span class="icon-youtube-with-circle"></span></a></li>
+        </ul>
+    </div>
+    </di>
+</footer>
+
+<script src="script/jquery-3.2.0.min.js"></script>
 <script src="script/main.js"></script>
 <script src="script/index.js"></script>
 <script src="script/constants.js"></script>
