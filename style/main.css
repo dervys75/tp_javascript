@@ -9,7 +9,7 @@
 body {
     width: 80%;
     margin: auto;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'PT Sans Caption', sans-serif;;
 
     background: -moz-linear-gradient(top, rgba(105,209,219,0.67) 0%, rgba(105,209,219,0.68) 3%, rgba(0,179,186,0.85) 55%, rgba(0,179,186,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(105,209,219,0.67) 0%,rgba(105,209,219,0.68) 3%,rgba(0,179,186,0.85) 55%,rgba(0,179,186,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -25,9 +25,9 @@ div.main {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-h1,h2,h3,h4,h5,h6 {
-    color: blueviolet;
-    font-family: 'Delius Unicase', cursive;
+h1,h2,h3,h5,h6 {
+/*     color: blueviolet; */
+    font-family: 'PT Sans Caption', sans-serif;
 
 }
 li {
@@ -50,7 +50,7 @@ header,nav,ul {
     width: 100%;
     margin: 0;
    padding-top: 10px;
-    font-family: 'Delius Unicase', cursive;
+    font-family: 'PT Sans Caption', sans-serif;;
 }
 
 div#logo {
@@ -144,20 +144,23 @@ section.centre_index {
 
 
 }
-<<<<<<< HEAD
-/*********************Page Catague**************************/
+
+/*********************Page Catalogue**************************/
 h3.title_forfait {
 	font-family: 'PT Sans Caption', sans-serif;
 	background: #0aacf7;
 	color: white;
 	padding: 10px;
 	font-weight: 300;
+	cursor: pointer;
 }
-h3.title_forfait::after {
-	
+
+h3.title_forfait:hover {
+	background:rgba(1, 132, 193, 0.87);
 }
+
 /**********************Fin page Catalogue*************************/
-=======
+
 
 
 
@@ -284,7 +287,7 @@ form.contenant fieldset li.court_1 {
 }
 
 form.contenant span,h4 {
-    color: #00B3BA;
+/*     color: #00B3BA; */
     margin: auto;
 }
 
