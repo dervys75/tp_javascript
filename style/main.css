@@ -161,7 +161,9 @@ h3.title_forfait {
 h3.title_forfait:hover {
 	background:rgba(1, 132, 193, 0.87);
 }
-
+.forfait_image{
+    width:50%;
+}
 /**********************Fin page Catalogue*************************/
 
 
