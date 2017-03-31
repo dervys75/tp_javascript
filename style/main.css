@@ -25,11 +25,11 @@ div.main {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-h1,h2,h3,h5,h6 {
-/*     color: blueviolet; */
+h1,h2,h3,h4,h5,h6 {
+    color: blueviolet;
     font-family: 'PT Sans Caption', sans-serif;
+    text-decoration: underline;
 
-}
 li {
     list-style: none;
 }
@@ -396,7 +396,7 @@ form.contenant div {
     padding-bottom: 20px;
 }
 
-form.contenant div input.soumettre{
+form.contenant div input.soumettre,a input.redirection{
     display: inline-block;
     width: 25%;
     height: 50px;
@@ -404,28 +404,53 @@ form.contenant div input.soumettre{
     margin-bottom: 5px;
     margin-top: 10px;
     margin-right: 5px;
-    background-color: #00B3BA;
+    background-color: #00B3BA; !important;
     color: white;
     /*font-size: 20px;*/
     font-size: 32px;
     padding: 5px;
-    text-shadow: 0px -1px 5px rgba(30, 30, 30, 0.8);
-    -webkit-box-shadow: 0px 1px 8px rgba(70, 50, 50, 0.96);
-    -moz-box-shadow:    0px 1px 8px rgba(70, 50, 50, 0.96);
-    box-shadow:         0px 1px 8px rgba(70, 50, 50, 0.96);
+    text-shadow: 0 -1px 5px rgba(30, 30, 30, 0.8);
+    -webkit-box-shadow: 0 1px 8px rgba(70, 50, 50, 0.96);
+    -moz-box-shadow:    0 1px 8px rgba(70, 50, 50, 0.96);
+    box-shadow:         0 1px 8px rgba(70, 50, 50, 0.96);
 
 
 }
 
-form.contenant div input.soumettre:hover {
+form.contenant div input.soumettre:hover,a input.redirection:hover{
     background-color: #3a7999;
     box-shadow: inset 0 0 0 3px #3a7999;
     cursor:pointer;
     text-shadow: none;
 
 }
+form.contenant fieldset ul li input.error {
+     border: 1px #bc574f solid;
+ }
 
+form.contenant fieldset ul li  span.error {
+    background-color: #bc574f;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-size: 8px;
+    font-family: -webkit-body;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-top: 6px;
+    position: absolute;
+}
 
+form.contenant fieldset ul li span.error:before {
+    content: '';
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #bc574f;
+    border-left: 8px solid transparent;
+    left:-16px;
+    position: absolute;
+    top: 5px;
+}
 
 
 
@@ -445,13 +470,15 @@ footer {
     display: flex;
     position: relative;
     vertical-align: middle;
-    color: blueviolet;
+    color: #00B3BA !important;
     font-family: 'Delius Unicase', cursive !important;
     font-size: medium !important;
 
 }
 
-
+footer h3 {
+    color: #00B3BA;
+}
 
 div.coordonees li {
     margin-bottom: 5px;
@@ -466,7 +493,7 @@ div.coordonees p {
 
 div.coordonees a {
     text-decoration: none;
-    color: blueviolet;
+    color: #00B3BA;
 }
 
 
@@ -476,6 +503,7 @@ div.social {
     display: inline-block;
     width: 50%;
     text-align: center;
+    padding: 20px 0;
 }
 
 div.coordonees {
@@ -496,9 +524,10 @@ div.coordonees span  {
     margin-right: 10px;
 }
 
-div.social h3 {
-    margin: 60px auto 10px;
-}
+/*div.social h3 {*/
+    /*margin: 60px auto 10px;*/
+
+/*}*/
 div.social ul {
     margin: 20px auto;
     padding: 20px;
@@ -515,13 +544,23 @@ div.social ul li a {
     width: 100%;
 }
 
+div.social p {
+    font-size: 8px;
+}
+
+div.social p span {
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
 div.social ul li a span {
     font-size: 50px;
-    color: blueviolet;
+    color: #00B3BA;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
-    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    box-shadow: 0 0 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0 0 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0 0 10px 4px rgba(119, 119, 119, 0.75);
 }
 
 
@@ -549,4 +588,3 @@ div.social ul li a span {
 
 
 }
->>>>>>> 76d17a88e0dc21738d4fd312f13425b35c6e0ab0
