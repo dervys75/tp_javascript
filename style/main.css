@@ -10,22 +10,23 @@ body {
     width: 80%;
     margin: auto;
     font-family: 'PT Sans Caption', sans-serif;;
-    background: -moz-linear-gradient(top, rgba(105,209,219,0.67) 0%, rgba(105,209,219,0.68) 3%, rgba(0,179,186,0.85) 55%, rgba(0,179,186,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(105,209,219,0.67) 0%,rgba(105,209,219,0.68) 3%,rgba(0,179,186,0.85) 55%,rgba(0,179,186,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(105,209,219,0.67) 0%,rgba(105,209,219,0.68) 3%,rgba(0,179,186,0.85) 55%,rgba(0,179,186,1) 100%);
-    /*http://www.colorzilla.com/gradient-editor/#69d1db+3,00b3ba+55&0.67+0,1+100;*/
-    background-repeat: no-repeat;
+    /*background: -moz-linear-gradient(top, rgba(105,209,219,0.67) 0%, rgba(105,209,219,0.68) 3%, rgba(0,179,186,0.85) 55%, rgba(0,179,186,1) 100%); !* FF3.6-15 *!*/
+    /*background: -webkit-linear-gradient(top, rgba(105,209,219,0.67) 0%,rgba(105,209,219,0.68) 3%,rgba(0,179,186,0.85) 55%,rgba(0,179,186,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
+    /*background: linear-gradient(to bottom, rgba(105,209,219,0.67) 0%,rgba(105,209,219,0.68) 3%,rgba(0,179,186,0.85) 55%,rgba(0,179,186,1) 100%);*/
+    /*!*http://www.colorzilla.com/gradient-editor/#69d1db+3,00b3ba+55&0.67+0,1+100;*!*/
+    /*background-repeat: no-repeat;*/
 }
 
 div.main {
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0.73) 99%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    background-color: rgba(46, 198, 208, 1);
+    /*background: -moz-linear-gradient(top,  rgba(255,255,255,0.73) 99%, rgba(255,255,255,0) 100%); !* FF3.6-15 *!*/
+    /*background: -webkit-linear-gradient(top,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); !* Chrome10-25,Safari5.1-6 *!*/
+    /*background: linear-gradient(to bottom,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=0 ); !* IE6-9 *!*/
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: blueviolet;
+    color: white;
     font-family: 'PT Sans Caption', sans-serif;
     text-decoration: underline;
 }
@@ -83,8 +84,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    background: rgba(218,249,239,1);
-    color: #00B3BA;
+    background: rgba(46, 198, 208, 1);
     text-shadow: 1px 2px 3px rgba(91, 56, 30, 0.28);
     width: 20%;
     padding: 25px 5px 0;
@@ -92,11 +92,21 @@ nav ul li {
     border: 2px solid #00B3BA;
     border-bottom: none;
     border-radius: 40px 40px 0 0;
-    -webkit-box-shadow: 0px -3px 19px 0px rgba(50, 50, 50, 0.65);
-    -moz-box-shadow:    0px -3px 19px 0px rgba(50, 50, 50, 0.65);
-    box-shadow:         0px -3px 19px 0px rgba(50, 50, 50, 0.65);
+    -webkit-box-shadow: 0 -3px 19px 0 rgba(50, 50, 50, 0.65);
+    -moz-box-shadow:    0 -3px 19px 0 rgba(50, 50, 50, 0.65);
+    box-shadow:         0 -3px 19px 0 rgba(50, 50, 50, 0.65);
 }
 
+
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
 
 nav ul li:hover {
     cursor: pointer;
@@ -107,16 +117,9 @@ nav ul li:hover {
 
 
 .active {
-    /*border-bottom: none;*/
+    background-color: #FFE4A5;
+    color: rgba(46, 198, 208, 1);
     box-shadow:inset 0 0 1em rgba(50, 50, 50, 0.65);
-    color: #00B3BA
-}
-
-
-nav ul li a {
-    text-decoration: none;
-    color: #00B3BA;
-    font-size: 20px;
 
 }
 
@@ -233,7 +236,7 @@ section.reserva_main{
    }
 
 form.contenant {
-    background: rgba(250, 255, 241, 0.7);
+
 
 }
 
@@ -247,6 +250,7 @@ form.contenant input,select {
 }
 
 form.contenant fieldset {
+    background: rgba(250, 255, 241, 0.7);
     width: 90%;
     margin: auto;
     border-radius: 10px 10px 10px 10px;
@@ -404,12 +408,12 @@ form.contenant div input.soumettre,a input.redirection{
     margin-bottom: 5px;
     margin-top: 10px;
     margin-right: 5px;
-    background-color: #00B3BA; !important;
-    color: white;
+    background-color: rgba(250, 255, 241, 0.7); !important;
+    color: #00B3BA;
     /*font-size: 20px;*/
     font-size: 32px;
     padding: 5px;
-    text-shadow: 0 -1px 5px rgba(30, 30, 30, 0.8);
+    /*text-shadow: 0 -1px 5px rgba(30, 30, 30, 0.8);*/
     -webkit-box-shadow: 0 1px 8px rgba(70, 50, 50, 0.96);
     -moz-box-shadow:    0 1px 8px rgba(70, 50, 50, 0.96);
     box-shadow:         0 1px 8px rgba(70, 50, 50, 0.96);
@@ -418,8 +422,9 @@ form.contenant div input.soumettre,a input.redirection{
 }
 
 form.contenant div input.soumettre:hover,a input.redirection:hover{
-    background-color: #3a7999;
-    box-shadow: inset 0 0 0 3px #3a7999;
+    background-color: orange;
+    box-shadow: inset 0 0 0 3px #00B3BA !important;
+    color: #00B3BA; !important;
     cursor:pointer;
     text-shadow: none;
 

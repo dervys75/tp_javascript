@@ -158,14 +158,14 @@ function valider_formulaire(event) {
             var input_pers = $('#pers').val(); // recueramos el valor de input #persona
             console.log(input_pers);
             var table = $('table').find('tr');
-            var cantt_personnes = table.eq(3).find('td').eq(0).text(input_pers);
+            var cantt_personnes = table.eq(2).find('td').eq(0).text(input_pers);
             console.log(cantt_personnes);
 
 
             // add le numbre de animaux au table
             var input_animaux = $('#animaux').val();  // recueramos el valor de input #animaux
             console.log(input_animaux);
-            var cantt_animaux = table.eq(2).find('td').eq(0).text(input_animaux);
+            var cantt_animaux = table.eq(1).find('td').eq(0).text(input_animaux);
             console.log(cantt_animaux);
 
 
