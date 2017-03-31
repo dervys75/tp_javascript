@@ -31,7 +31,8 @@ function  requestForfaitCat(){
         $('<li class="forfait">')
             .appendTo(forfaitsContainer.eq(forfaits.categorie))
             .append('<h4>' + forfaits.nom + '</h4>')
-            .append('<img src="'+IMG_PATH+forfaits_data[i].photo1+'"/>')
-            .append('<a href="reservation.html?forfid='+ i +'">Details Forfaits</a>');
+            .append('<img class="forfait_image" src="'+IMG_PATH+forfaits_data[i].photo1+'"/>')
+            .append('<a id="forfait_name" href="reservation.html?forfid='+ i +'">Details Forfaits</a>');
+
     }
 }
