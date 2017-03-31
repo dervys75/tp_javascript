@@ -28,7 +28,7 @@ div.main {
 h1,h2,h3,h4,h5,h6 {
     color: blueviolet;
     font-family: 'PT Sans Caption', sans-serif;
-    text-decoration: underline;
+    text-decoration: underline;}
 
 li {
     list-style: none;
@@ -146,7 +146,7 @@ section.centre_index {
 }
 
 /*********************Page Catalogue**************************/
-h3.title_forfait {
+h3 {
 	font-family: 'PT Sans Caption', sans-serif;
 	background: #0aacf7;
 	color: white;
@@ -155,7 +155,7 @@ h3.title_forfait {
 	cursor: pointer;
 }
 
-h3.title_forfait:hover {
+h3:hover {
 	background:rgba(1, 132, 193, 0.87);
 }
 
