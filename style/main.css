@@ -10,7 +10,6 @@ body {
     width: 80%;
     margin: auto;
     font-family: 'PT Sans Caption', sans-serif;;
-
     background: -moz-linear-gradient(top, rgba(105,209,219,0.67) 0%, rgba(105,209,219,0.68) 3%, rgba(0,179,186,0.85) 55%, rgba(0,179,186,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(105,209,219,0.67) 0%,rgba(105,209,219,0.68) 3%,rgba(0,179,186,0.85) 55%,rgba(0,179,186,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(105,209,219,0.67) 0%,rgba(105,209,219,0.68) 3%,rgba(0,179,186,0.85) 55%,rgba(0,179,186,1) 100%);
@@ -29,6 +28,7 @@ h1,h2,h3,h4,h5,h6 {
     color: blueviolet;
     font-family: 'PT Sans Caption', sans-serif;
     text-decoration: underline;
+}
 
 li {
     list-style: none;
@@ -470,19 +470,18 @@ footer {
     display: flex;
     position: relative;
     vertical-align: middle;
-    color: #00B3BA !important;
+    color: black !important;
     font-family: 'Delius Unicase', cursive !important;
     font-size: medium !important;
 
 }
 
 footer h3 {
-    color: #00B3BA;
+    color: black;
+    font-size: 30px;
+    margin: 0;
 }
 
-div.coordonees li {
-    margin-bottom: 5px;
-}
 
 div.coordonees p {
     /*color: blueviolet;*/
