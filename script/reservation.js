@@ -3,7 +3,6 @@
  */
 'use strict';
 
-"use strict";
 
 var formulaire; // L'élément form
 
@@ -20,6 +19,23 @@ $(function () {
     lire_input_ecrire_table();
     // charger_prix();
 });
+
+// chargement du forfait choisir
+$(function(){
+    console.log('chargement');
+    var forfid = getParameterByName('forfid');
+    if (forfid != null) {
+        console.log('Réservation du forfait index =', forfid);
+        // Les data du forfait
+        var forfait = forfaits_data[forfid];
+        $('.nom_forfait').text(forfait.nom);
+        $('.prix_forf').text(forfait.prix);
+        $('.sejour').text(forfait.duree);
+       
+
+    }
+});
+
 
 /**
  * Fonction de validation du formulaire

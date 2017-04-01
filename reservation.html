@@ -14,17 +14,25 @@
             <a href="index.html"><img src="images/favicon.png" alt="Voyages"></a>
             <h1>Voyages de Rêve</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><span class="icon-home"></span>Accueil</a></li>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li class="active"><a href="reservation.html">Reservation</a></li>
+        <nav id="nave">
+            <ul >
+                <li><a href="index.html"><span>Accueil</span></a></li>
+                <li><a href="catalogue.html"><span>Catalogue</span></a></li>
+                <li><a href="reservation.html" class="current"><span>Reservation</span></a></li>
             </ul>
         </nav>
     </header>
     <section class="reserva_main">
-        <div class="promo_reserv">
-        </div>
+        <div class="forf_choisi">
+            <h2>Réserver le forfait :<span class="nom_forfait"></span></h2>
+            <ul>
+            <li>Prix de forfait :<span class="prix_forf"></span></li>
+            <li>Sejour :<span class="sejour"></span></li>
+            <li>Detailles :<span class="info_cat"></span></li>
+            <li>Prix di forfait :<span class="ref_forfait"></span></li>
+
+            </ul>
+
         <form id="reservation" class="contenant" action="#">
             <h4>C'est maintenant l'heure de l'épreuve le formulaire!</h4>
             <fieldset id="identite" class="identite">
@@ -116,6 +124,7 @@
                 <a href="index.html"><input type="button" value="Annuler" class="redirection"/></a>
             </div>
         </form>
+        </div>
     </section>
     <footer>
         <div class="coordonees">
@@ -146,7 +155,7 @@
     </footer>
 </div>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script/jquery-3.2.0.min.js"></script>
 <script src="http://p86-tp-forfaits.projetisi.com/script/forfaits.js"></script>
 <script src="script/reservation.js"></script>
