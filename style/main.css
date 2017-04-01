@@ -25,11 +25,13 @@ div.main {
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=0 ); !* IE6-9 *!*/
 }
 
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
     margin: 0;
+    background-color: #00B3BA;
     color: white;
     font-family: 'PT Sans Caption', sans-serif;
     text-decoration: underline;
+    text-align: center;
 }
 
 li {
@@ -55,20 +57,21 @@ section#form_rabais {
     /*font-family: 'PT Sans Caption', sans-serif;;*/
 /*}*/
 
-div#logo {
-    padding: 20px;
+div#logo a{
+    padding: 70px;
 }
 
 div#logo img {
-    width: 10%;
+    width: 8%;
 }
 
 div#logo h1 {
+    margin: 50px auto 0;
     width: 80%;
     display: block;
     float: right;
-    margin: auto;
-    color: blueviolet;
+
+    color: white;
 }
 
 /*#nave {*/
@@ -91,6 +94,7 @@ div#logo h1 {
     display:block;
     float:left;
     margin:0 2px;
+    border-left: 3px solid orange;
 
    }
 
@@ -125,12 +129,12 @@ div#logo h1 {
 #nave ul li a.current,#nave ul li a.current:hover{
     color: #863cd3;
     background:rgb(249, 219, 142) 87%;
-    border-top: 1px solid orange;
+    border-bottom: 3px solid orange;
 }
 
-#nave ul li a.current span{background:rgb(249, 219, 142) 87%;
-    height:43px;
-}
+/*#nave ul li a.current span{background:rgb(249, 219, 142) 87%;*/
+    /*height:43px;*/
+/*}*/
 
 div#carrusel {
     width: 100%;
@@ -183,6 +187,37 @@ h3.title_forfait:hover {
 /**************************************************************/
                     /*DERVYS RESERVATION*/
 /**************************************************************/
+
+div.forf_choisi {
+
+    position: relative;
+
+}
+
+div.forf_choisi p{
+    display: inline-block;
+    width: 30%;
+    margin: 20px 0 auto 155px;
+
+}
+
+div.forf_choisi p img{
+    width: 100%;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 4px outset #00B3BA;
+
+}
+
+div.forf_choisi ul.forf_detaille {
+
+
+    width: 55%;
+    margin-top: 95px;
+    float: right;
+
+}
 
 section.reserva_main{
     background: rgba(250, 255, 241, 0.7);
@@ -246,16 +281,14 @@ form.contenant fieldset li.court_1 {
     padding-bottom: 10px;
 }
 
-form.contenant span,h4 {
+form.contenant span {
 /*     color: #00B3BA; */
     margin: auto;
 }
 
 form.contenant h4 {
-    width: 80%;
-    text-align: center;
-    padding: 40px;
-    text-decoration: underline;
+    font-size: 20px;
+
 }
 
 
@@ -361,15 +394,12 @@ footer {
     display: flex;
     position: relative;
     vertical-align: middle;
-    color: #00B3BA !important;
+    color: white !important;
     font-family: 'Delius Unicase', cursive !important;
     font-size: medium !important;
 
 }
 
-footer h3 {
-    color: #00B3BA;
-}
 
 div.coordonees li {
     margin-bottom: 5px;
@@ -384,7 +414,7 @@ div.coordonees p {
 
 div.coordonees a {
     text-decoration: none;
-    color: #00B3BA;
+    color: white;
 }
 
 
@@ -404,8 +434,7 @@ div.coordonees {
 
 
 div.coordonees ul {
-    margin: auto;
-
+    margin: 30px auto;
     width: 45%;
     text-align: left;
 }
@@ -449,9 +478,9 @@ div.social ul li a span {
     font-size: 50px;
     color: #00B3BA;
     border-radius: 30px;
-    box-shadow: 0 0 10px 4px rgba(119, 119, 119, 0.75);
-    -moz-box-shadow: 0 0 10px 4px rgba(119, 119, 119, 0.75);
-    -webkit-box-shadow: 0 0 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0 0 10px 1px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0 0 10px 1px rgba(119, 119, 119, 0.75);
+    box-shadow: 0 0 10px 1px rgba(119, 119, 119, 0.75);
 }
 
 

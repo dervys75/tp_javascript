@@ -28,10 +28,12 @@ $(function(){
         console.log('Réservation du forfait index =', forfid);
         // Les data du forfait
         var forfait = forfaits_data[forfid];
-        $('.nom_forfait').text(forfait.nom);
-        $('.prix_forf').text(forfait.prix);
-        $('.sejour').text(forfait.duree);
-       
+        $('.imges').html('<img src="'+IMG_PATH+forfait.photo1+'"/>');
+        $('.nom_forfait').text(' '+forfait.nom);
+        $('.prix_forf').text(forfait.prix + ' $');
+        $('.sejour').text(forfait.duree + ' Jours.');
+
+
 
     }
 });
