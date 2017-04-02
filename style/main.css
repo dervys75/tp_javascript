@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
 }
 
 body {
@@ -17,103 +18,7 @@ body {
     /*background-repeat: no-repeat;*/
 }
 
-div.main {
-    background-color: rgba(46, 198, 208, 1);
-    /*background: -moz-linear-gradient(top,  rgba(255,255,255,0.73) 99%, rgba(255,255,255,0) 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom,  rgba(255,255,255,0.73) 99%,rgba(255,255,255,0) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=0 ); !* IE6-9 *!*/
-}
 
-h1,h2,h3,h4,h5,h6 {
-    color: white;
-    font-family: 'PT Sans Caption', sans-serif;
-    text-decoration: underline;
-}
-
-li {
-    list-style: none;
-}
-
-header,
-section#form_rabais {
-    background: rgb(247, 149, 2);
-    background: -moz-linear-gradient(93deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
-    background: -webkit-linear-gradient(93deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
-    background: -o-linear-gradient(93deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
-    background: -ms-linear-gradient(93deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
-    background: linear-gradient(183deg, rgb(247, 149, 2) 30%, rgb(249, 219, 142) 87%);
-
-}
-
-
-header,nav,ul {
-    width: 100%;
-    margin: 0;
-   padding-top: 10px;
-    font-family: 'PT Sans Caption', sans-serif;;
-}
-
-div#logo {
-    padding: 20px;
-}
-
-div#logo img {
-    width: 10%;
-}
-
-div#logo h1 {
-    width: 80%;
-    display: block;
-    float: right;
-    margin: auto;
-    color: blueviolet;
-}
-
-nav {
-    overflow:hidden;
-}
-
-nav ul {
-    width: 80%;
-    margin: auto;
-   text-align: right;
-    margin-right: 20px;
-
-}
-
-nav ul li {
-    display: inline-block;
-    background: rgba(46, 198, 208, 1);
-    text-shadow: 1px 2px 3px rgba(91, 56, 30, 0.28);
-    width: 20%;
-    padding: 25px 5px 0;
-    text-align: center;
-    border: 2px solid #00B3BA;
-    border-bottom: none;
-    border-radius: 40px 40px 0 0;
-    -webkit-box-shadow: 0 -3px 19px 0 rgba(50, 50, 50, 0.65);
-    -moz-box-shadow:    0 -3px 19px 0 rgba(50, 50, 50, 0.65);
-    box-shadow:         0 -3px 19px 0 rgba(50, 50, 50, 0.65);
-}
-
-
-
-
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-
-}
-
-nav ul li:hover {
-    cursor: pointer;
-    background-color: #FFE4A5;
-
-
-}
 
 
 .active {
@@ -147,6 +52,49 @@ section.centre_index {
 
 
 }
+/*************************Edition de la page acceuil*******************************************/
+#menu_container ul li{
+display: inline-block;
+text-transform: uppercase;
+padding: 10px;
+}
+#menu_container ul li a {
+    text-decoration: none;
+}
+#menu_container {
+    margin-left:60%;
+}
+header div {
+    display: inline-block;
+}
+/*********slider page Acceil********/
+#slider {
+    width: 1150px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 10000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 1150px;
+    height: 400px;
+}
+.slide1 {background: red;}
+.slide2 {background: blue;}
+.slide3 {background: green;}
+.slide4 {background: purple;}
+.slide5 {background: pink;}
+/******fin du slider*******/
+/**************************************Fin edition de la page acceuil**************************************/
 
 /*********************Page Catalogue**************************/
 h3.title_forfait {
@@ -162,7 +110,28 @@ h3.title_forfait:hover {
 	background:rgba(1, 132, 193, 0.87);
 }
 .forfait_image{
-    width:50%;
+     width: 90%;
+    transition:ease-in-out 0.1s;
+ }
+.forfait_image:hover{
+  transform: scale(1.1);
+}
+.forfait_list li {
+    display: inline-block;
+    width: 33%;
+}
+.forfait_list h4{
+    color: #0d5d86;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.forfait_list{
+    background: rgba(186, 227, 232, 0.56);
+
+}
+.forfait_name {
+    padding:10px;
 }
 /**********************Fin page Catalogue*************************/
 
@@ -409,7 +378,7 @@ form.contenant div input.soumettre,a input.redirection{
     margin-bottom: 5px;
     margin-top: 10px;
     margin-right: 5px;
-    background-color: #00B3BA; !important;
+    background-color: #00B3BA;
     color: white;
     /*font-size: 20px;*/
     font-size: 32px;
