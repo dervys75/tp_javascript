@@ -32,7 +32,7 @@ function  requestForfaitCat(){
             .appendTo(forfaitsContainer.eq(forfaits.categorie))
             .append('<h4>' + forfaits.nom + '</h4>')
             .append('<img class="forfait_image" src="'+IMG_PATH+forfaits_data[i].photo1+'"/>')
-            .append('<a id="forfait_name" href="reservation.html?forfid='+ i +'">Details Forfaits</a>');
+            .append('<a class="forfait_name" href="reservation.html?forfid='+ i +'">Details Forfaits</a>');
 
     }
 }
