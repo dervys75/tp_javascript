@@ -65,4 +65,6 @@ $(function() {
         .on('mouseleave', startSlider);
 
     startSlider();
+    // Forfait en promotion 
+    
 });
