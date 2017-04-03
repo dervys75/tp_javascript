@@ -6,7 +6,7 @@ $(function () {
     console.log('DOM Construit');
     catalogueTitle = $('#accordion_cats');
     console.log(catalogueTitle);
-    showForfaits = $('.one_cat_forfaits')
+    showForfaits = $('.one_cat_forfaits');
    requestTitle();
    requestForfaitCat();
 
@@ -36,3 +36,4 @@ function  requestForfaitCat(){
 
     }
 }
+
