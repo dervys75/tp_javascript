@@ -34,7 +34,7 @@ const IMG_PATH ="http://p86-tp-forfaits.projetisi.com/images/";
 $(function() {
 
     //settings for slider
-    var width = 100 + '%';
+    var width = 1200;
     var animationSpeed = 1000;
     var pause = 2000;
     var currentSlide = 1;
@@ -64,9 +64,9 @@ $(function() {
         .on('mouseenter', pauseSlider)
         .on('mouseleave', startSlider);
 
-//   startSlider();
+  startSlider();
     // Forfait en promotion 
-    console.log(forfaits_data[1].nom);
+    // console.log(forfaits_data[1].nom);
     //les forfaits en promotion
     $('<ul class="the_promo">').appendTo('.promo_forfaits');
         $(".the_promo").append('<li><img src="'+IMG_PATH+forfaits_data[1].photo1+'"/>')
