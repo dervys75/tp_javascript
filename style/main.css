@@ -86,8 +86,9 @@ header div {
 #slider .slide {
     float: left;
     list-style-type: none;
-    width: 1200px;
-    height: 400px;
+    width: 1100px;
+    height: 500px;
+    margin:0;
 }
 .details li {
     display: inline-block;
@@ -108,11 +109,8 @@ header div {
     width: 100%;
 }
 /* helper css, since we don't have images */
-.slide1 {background: red;}
-.slide2 {background: blue;}
-.slide3 {background: green;}
-.slide4 {background: purple;}
-.slide5 {background: pink;}
+.slide img {width: 1100px;height:400px;}
+
 /******fin du slider*******/
 /**************************************Fin edition de la page acceuil**************************************/
 
