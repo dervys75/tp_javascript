@@ -14,25 +14,25 @@
             <a href="index.html"><img src="images/favicon.png" alt="Voyages"></a>
             <h1>Voyages de Rêve</h1>
 
-        <nav id="nave">
-            <ul >
-                <li><a href="index.html"><span>Accueil</span></a></li>
-                <li><a href="catalogue.html"><span>Catalogue</span></a></li>
-                <li><a href="reservation.html" class="current"><span>Reservation</span></a></li>
-            </ul>
-        </nav>
+            <nav id="nave">
+                <ul>
+                    <li><a href="index.html"><span>Accueil</span></a></li>
+                    <li><a href="catalogue.html"><span>Catalogue</span></a></li>
+                    <li><a href="reservation.html" class="current"><span>Reservation</span></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <section class="reserva_main">
         <div class="forf_choisi">
-
-            <h2>Réserver le forfait :<span class="nom_forfait"></span></h2>
             <p class="imges"></p>
+            <h2><span class="nom_forfait"></span></h2>
             <ul class="forf_detaille">
+                <li><span class="ref_detail"></span></li>
+                <li>Sejour:<span class="sejour"></span></li>
                 <li>Prix de forfait :<span class="prix_forf"></span></li>
-            <li>Sejour :<span class="sejour"></span></li>
             </ul>
-            </div>
+        </div>
 
         <form id="reservation" class="contenant" action="#">
             <h4>C'est maintenant l'heure de l'épreuve le formulaire!</h4>
@@ -50,15 +50,15 @@
                     </li>
                     <li class="long">
                         <label for="email">Email :</label>
-                        <input type="email" name="direccionemail" id="email" placeholder="Ej.: user@xxxx.com">
+                        <input type="text" name="direccionemail" id="email" placeholder="Ej.: user@xxxx.com">
                     </li>
                     <li class="long">
                         <label for="adresse">Adresse du Client :</label>
-                        <input type="text" id="adresse" placeholder="Entrez votre Adresse" pattern="[A-Za-z]{2,}"/>
+                        <input type="text" id="adresse" placeholder="Entrez votre Adresse" />
                     </li>
                     <li class="court_1">
                         <label for="telephone"> Téléphone :</label>
-                        <input type="tel" id="telephone"  placeholder="(xxx)-xxx-xxxx"/>
+                        <input type="tel" id="telephone" placeholder="(xxx)-xxx-xxxx"/>
                     </li>
                     <li class="court_1">
                         <label for="province" class="court">Province :</label>
@@ -82,19 +82,19 @@
                     </li>
                     <li class="court_1">
                         <label for="pers">Nombre de participants :</label>
-                        <input type="number" id="pers" class="court" placeholder="Cantite de personnes" min="1"/>
+                        <input type="number" id="pers" class="court" value="1" placeholder="Cantite de personnes" min="1"/>
                     </li>
                     <li class="court_1">
                         <label for="animaux">Nombre de'Animaux :</label>
-                        <input type="number" id="animaux" class="court" placeholder="0" min="0" max="1"/>
+                        <input type="number" id="animaux" class="court" value="0" placeholder="No. Animaux" min="0"/>
                     </li>
                     <li class="court_1">
-                        <label for="date"> <span class="icon-calendar"></span>>Date de départ</label>
-                        <input id="date" type="date" name="bday" max="2018-12-31"/>
+                        <label for="date"> <span class="icon-calendar"></span>Date de départ</label>
+                        <input id="date" type="date" name="bday"  max="2018-12-31"/>
                     </li>
                 </ul>
             </fieldset>
-            <table>
+            <table class="calc_prix">
                 <tr>
                     <th>Options</th>
                     <th>Qté</th>
@@ -120,6 +120,20 @@
                     <td></td>
                 </tr>
             </table>
+            <div id="conditions">
+                <h4>Conditions d'utilisation</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus varius orci, id consequat urna dapibus at. Sed rhoncus, purus in cursus hendrerit, tellus est fermentum lectus, fringilla pretium lacus lectus at orci. Duis ante justo, eleifend interdum accumsan porta, congue lobortis lacus. Morbi pulvinar arcu ac ante pulvinar id dapibus orci tincidunt. Sed iaculis accumsan purus, eget dapibus tortor molestie quis. Suspendisse hendrerit vulputate lacus, id dapibus leo placerat auctor. Nulla pharetra risus eget sapien sodales ultricies. Ut et est risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sed leo enim. Proin pretium euismod dolor ac tempus. Suspendisse pellentesque est nec nibh pellentesque hendrerit. </p>
+                <div class="buttons">
+                    <a href="#" class="ok">Accepter</a>
+                    <a href="#" class="cancel">Refuser</a>
+                </div>
+            </div>
+            <div id="recapitulatif">
+                <h4>MERCI</h4>
+                <p>Merci de avoir choisir VOYAGES DE RÊVE..</p>
+                <p>BONNE VACANSES.</p>
+                <a href="#" class="fermer"></a>
+            </div>
             <div>
                 <input type="submit" id="sumetre" value="Reservez" class="soumettre"/>
                 <a href="index.html"><input type="button" value="Annuler" class="redirection"/></a>
@@ -127,6 +141,13 @@
         </form>
 
     </section>
+    <div id="confirmation">
+
+
+    </div>
+    <div id="bay">
+
+    </div>
     <footer>
         <div class="coordonees">
             <h3>Nous Coordonnées</h3>

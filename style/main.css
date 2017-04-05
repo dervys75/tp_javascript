@@ -163,33 +163,42 @@ h3.title_forfait:hover {
 /**************************************************************/
 
 div.forf_choisi {
-
+    background-color: #0aacf7;
+    color: white;
     position: relative;
+    max-height: 186px;
 
 }
 
+div.forf_choisi h2  {
+   text-align: left;
+    width: 60%;
+    float: right;
+}
+
 div.forf_choisi p{
-    display: inline-block;
-    width: 30%;
-    margin: 20px 0 auto 155px;
+    display: inline;
+    /*width: 15%;*/
+    /*margin: 20px 0 auto 155px;*/
 
 }
 
 div.forf_choisi p img{
-    width: 100%;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 4px outset #00B3BA;
+    width: 20%;
+    margin: 20px;
 
 }
 
 div.forf_choisi ul.forf_detaille {
 
+    position: relative;
+    width: 35%;
+    bottom: 130px;
+    left: 43%;
 
-    width: 55%;
-    margin-top: 95px;
-    float: right;
+    /*width: 55%;*/
+    /*margin-top: 30px;*/
+    /*float: right;*/
 
 }
 
@@ -198,19 +207,15 @@ section.reserva_main{
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    color: #00B3BA;
+    color: #0aacf7;
    }
 
-form.contenant {
-
-
-}
 
 form.contenant input,select {
     width: 80%;
     height: 40px;
     padding: 5px;
-    border: 1px solid #00B3BA;
+    border: 1px solid #0aacf7;
     border-radius: 10px 10px 10px 10px;
 
 }
@@ -218,13 +223,16 @@ form.contenant input,select {
 form.contenant fieldset {
     width: 90%;
     margin: auto;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border:none;
+    padding: 20px 0;
     margin-bottom: 20px;
+    border:none;
+    background-color:  rgba(218,249,239,1);
+
 }
 
+form.contenant fieldset ul {
+    margin-left: 140px;
+}
 
 form.contenant fieldset li{
     display: inline-block;
@@ -262,78 +270,11 @@ form.contenant span {
 
 form.contenant h4 {
     font-size: 20px;
+    width: 40%;
+    margin: 25px auto;
 
 }
 
-/*form.contenant fieldset h4 {*/
-    /*width: 70%;*/
-    /*margin: 10px auto;*/
-/*}*/
-
-/*form.contenant fieldset span {*/
-    /*font-size: 30px;*/
-    /*!*display: block;*!*/
-/*}*/
-
-/*fieldset.identite ul,fieldset.dure_vac ul {*/
-    /*width: 100%;*/
-    /*padding: 0;*/
-/*}*/
-
-/*form.contenant li {*/
-    /*margin-bottom: 5px;*/
-/*}*/
-
-
-/*form.contenant fieldset ul li {*/
-    /*display: inline-block;*/
-    /*width: 38%;*/
-    /*margin-left: 100px;*/
-
-/*}*/
-
-/*fieldset.identite input[type="text"],*/
-/*fieldset.identite input[type="email"] {*/
-    /*width: 100%;*/
-/*}*/
-
-/*li.court {*/
-    /*display: inline-block;*/
-    /*width: 20%;*/
-
-/*}*/
-
-/*li.court_1 {*/
-    /*width: 15%;*/
-/*}*/
-
-/*fieldset.dure_vac {*/
-    /*width: 70%;*/
-    /*margin: auto;*/
-/*}*/
-
-/*form.contenant li.court_1 {*/
-    /*display: inline-block;*/
-    /*width: 30%;*/
-/*}*/
-
-/*form.contenant li.court_2 {*/
-    /*display: inline-block;*/
-    /*width: 35%;*/
-/*}*/
-
-/*form.contenant fieldset.identite li.court_1 label {*/
-    /*width: 20%;*/
-    /*!*display: block;*!*/
-/*}*/
-
-/*form.contenant li.court_1 input {*/
-    /*width: 25%;*/
-/*}*/
-
-/*li.court_2 input {*/
-    /*width: 50%;*/
-/*}*/
 
 form.contenant table {
     width: 40%;
@@ -346,8 +287,9 @@ form.contenant table {
 form.contenant table tbody{
     width: 80%;
     padding: 10px;
-    background-color:  rgba(218,249,239,1);
+    background-color:   #0aacf7;
     margin-bottom: 10px;
+    color: white;
 
 }
 
@@ -371,7 +313,7 @@ form.contenant div input.soumettre,a input.redirection{
     margin-bottom: 5px;
     margin-top: 10px;
     margin-right: 5px;
-    background-color: #00B3BA; !important;
+    background-color: #0aacf7; !important;
     color: white;
     /*font-size: 20px;*/
     font-size: 32px;
@@ -420,6 +362,40 @@ form.contenant fieldset ul li span.error:before {
 }
 
 
+/* Première boite de dialogue */
+#conditions {
+    background: white;
+    border-radius: 10px;
+    display: none;
+    margin: 100px auto;
+    position: relative;
+    width: 500px;
+    padding: 40px;
+}
+
+/* Seconde boite de dialogue */
+#recapitulatif {
+    background: white;
+    display: none;
+    margin: 100px auto;
+    position: relative;
+    width: 500px;
+    padding: 40px;
+    border:10px solid #f2fa99;
+    border-style: ridge;
+}
+
+#recapitulatif a.fermer {
+    background: url(../images/close_icon.png);
+    position:absolute;
+    top:-25px;
+    right:-25px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+
 
 
 
@@ -437,7 +413,7 @@ footer {
     display: flex;
     position: relative;
     vertical-align: middle;
-    color: #00B3BA !important;
+    color: #0aacf7 !important;
     font-family: 'Delius Unicase', cursive !important;
     font-size: medium !important;
 
@@ -519,7 +495,7 @@ div.social p span {
 
 div.social ul li a span {
     font-size: 50px;
-    color: #00B3BA;
+    color: #0aacf7;
     border-radius: 30px;
     -moz-box-shadow: 0 0 10px 1px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0 0 10px 1px rgba(119, 119, 119, 0.75);
