@@ -14,9 +14,16 @@ var mb_data = {
 /**
  * Handler de synchonisation
  */
-$(function () {
 
+$(function () {
     console.log('DOM Construit');
+    // function getParameterByName(name, url) {
+    //     if ('undefined' == typeof url) {
+    //         url = window.location.search;
+    //     }
+    //     var match = new RegExp('[?&]' + name + '=([^&]*)').exec(url);
+    //     return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    // }
 
     var forfid = getParameterByName('forfid');
     if (forfid != null) {
@@ -30,8 +37,8 @@ $(function () {
         $('.sejour').text(forfait.duree + ' Jours.');
         $('table').find('tr').eq(1).find('td').eq(1).text(parseFloat(forfait.prix_animal).toFixed(2) + ' $');
         $('table').find('tr').eq(2).find('td').eq(1).text(parseFloat(forfait.prix).toFixed(2) + ' $');
-        $('#animaux').attr('max', forfait.max_animaux);
-
+        $('#animaux').attr('max', forfaits_data[forfid]);
+        $('.mb_background').before('<h3>' + forfait.nom + '</h3>').before('<p>' + forfait.lieu + '</p>');
 
     }
 
@@ -60,6 +67,8 @@ $(function () {
     });
 
     lire_input_ecrire_table();
+
+    // remplir_container();
 });
 
 // chargement du forfait choisir
@@ -173,7 +182,8 @@ function lire_input_ecrire_table() {
 
     // add le numbre de animaux au table
 
-    cantt_animaux = parseInt($('#animaux').val());  // recueramos el valor de input #animaux
+    cantt_animaux = $('#animaux').val();  // recueramos el valor de input #animaux
+    cantt_animaux = parseInt(cantt_animaux);
     table.eq(1).find('td').eq(0).text(cantt_animaux); // escrir la valeur d'input cantite de animaux dans la table
     console.log(cantt_animaux);
     // console.log(table.eq(1).find('td').eq(0).text(cantt_animaux));
@@ -211,9 +221,10 @@ function lire_input_ecrire_table() {
 function mb_create_container() {
     mb_data.container = $('.mb_container');
     if (mb_data.container.length == 0) { // Le container n'existe pas : il faut le créer
-        mb_data.container =$('<div>')
-                .addClass('mb_container').append('<p>' + forfait.nom + '')
-                .appendTo('table');
+        mb_data.container =
+            $('<div>')
+                .addClass('mb_container')
+                .appendTo('section');
         // Créer le div background dedans
         $('<div>')
             .addClass('mb_background')
@@ -222,7 +233,6 @@ function mb_create_container() {
         console.log('mb_container est créé');
     }
 }
-
 
 
 function mb_open(target, closingItems, css_options) {
@@ -253,6 +263,14 @@ function mb_open(target, closingItems, css_options) {
     }
 }
 
+
+// function remplir_container() {
+//     getParameterByName();
+//     console.log(getParameterByName());
+//     $('#animaux').attr('max', forfaits_data[forfid]);
+//     $('.buttons').before('<h3>' + forfait.nom + '</h3>').before('<p>' + forfait.lieu + '</p>');
+//
+// }
 /**
  * Fermer la modal_box
  */
